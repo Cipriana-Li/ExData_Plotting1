@@ -17,5 +17,5 @@ Specificdates$Date<-as.Date(Specificdates$Date,format="%d/%m/%Y"
 hist(Specificdates$Global_active_power,main="Global Active Power",xlab = "Global Active Power (kilowatts)", ylab="Frequency",col="red")
 
 #Save the histogram to a PNG file with a width of 480 pixels and a height of 480 pixels
-png("plot1.png", width=480, height=480)
+dev.copy(png, file="plot1.png", height=480, width=480)
 dev.off()
